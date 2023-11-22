@@ -16,7 +16,7 @@ html {
 .hero-container {
     position: relative;
     margin: 0 auto;
-    bottom: 15px;
+    bottom: 0px;
     height: 70%;
     width: auto;
     
@@ -38,10 +38,11 @@ h1 {
     text-decoration: bold;
     font-size: 100px;
     letter-spacing: 10px;
+    padding-top:75px;
     margin: 0 auto;
     text-align: center;
     position: relative;
-    top: 40px;
+    top: 60px;
     z-index: 3;
 }
 

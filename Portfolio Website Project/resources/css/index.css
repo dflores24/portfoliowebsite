@@ -1,0 +1,31 @@
+html {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero-section {
+    width: 100%;
+    margin: 0 auto 100px;
+    height: 800px;
+    background-color: blue;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "hero1 hero2 ."
+    ". hero2 ."
+    ". hero2 hero3";
+}
+
+.hero-1 {
+    grid-area: hero1;
+}
+.hero-2 {
+    grid-area: hero2;
+}
+.hero-3 {
+    grid-area: hero3;
+}

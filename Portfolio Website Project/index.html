@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="cc1">
 
 <head>
   <meta charset="utf-8">
@@ -10,14 +10,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
-  <script type="text/javascript" src='./resources/index.js'></script>
+  
 </head>
 
 <body>
-    <div class="hero-section">
+    <div class="hero-section" id="cc2">
         <nav>
             <div class="left">
-                <div id="colorButt" class="colorButton">
+                <div onclick="colorChange()" id="colorButt" class="colorButton">
                     <p>D<span class="F">F</span></p>
                 </div>
             </div>
@@ -30,7 +30,7 @@
             </div>
         </nav>
         <div  class="name">
-            <h1>David Flores</h1>
+            <h1 id="nc1">David Flores</h1>
         </div>
         
         <div id="name"></div>
@@ -38,13 +38,13 @@
             <img src="resources/images/IMG_1545.jpg">
         </div>
         </div>
-    <main>
+    <main id="cc3">
         <div id="about" class="about-section">
             
-            <div class="about-middle">
+            <div class="about-middle" id="cc4" >
                 <div class="about-container">
                     <h3>Student - Athlete - Brother</h3>
-                    <p>I'm David Flores, a high-school junior from Virginia. I aspire to one day be like <span class="chickenJoe">Chicken Joe</span> from Surf's Up. I like coming up with new ideas, trying to make them reality, and then trying again. In my free time, you can probably find me on the back field playing soccer or lacrosse, but if I'm feeling extra studious that day, you may find me scrolling through my phone in the library. Hopefully, you found this project somewhat nice, or at the very least interesting. I'm hoping that by the time I finish this it will look the way I originally planned but worse comes to worse, I probably found a compromise. Anyways, please enjoy this <em>Contact Me</em> section underneath this paragraph.</p>
+                    <p>I'm David Flores, a high-school junior from Virginia. I aspire to one day be like <span id="nc2"class="chickenJoe">Chicken Joe</span> from Surf's Up. I like coming up with new ideas, trying to make them reality, and then trying again. In my free time, you can probably find me on the back field playing soccer or lacrosse, but if I'm feeling extra studious that day, you may find me scrolling through my phone in the library. Hopefully, you found this project somewhat nice, or at the very least interesting. I'm hoping that by the time I finish this it will look the way I originally planned but worse comes to worse, I probably found a compromise. Anyways, please enjoy this <em>Contact Me</em> section underneath this paragraph.</p>
                 </div>
                 <div class="masked-overlay"></div>
                 <div class="about-image">
@@ -65,7 +65,7 @@
             </div>
             
         </div>
-        <div class="surfsupbottom">
+        <div class="surfsupbottom" id="nc3">
             <div class="cjimage"></div>
 
             <div class="otherimages">
@@ -80,9 +80,26 @@
                 <span>&copy;</span>Looks like I figured out how to make the little copyright thing
             </footer>
 
+
         </div>
         
     </main>
+    <script>
+        const colorPalette = ['28AFB0', '19647E', 'EE964B', 'E16F7C', '98DFAF', 'FF6666', 'C76D7E', '6B2D5C', '4E6E58', '840032', '187795', '1B4079', '474350', 'DAC4F7', 'C98686', '966B9D', 'F18805', '090C9B' ];
+        let root = document.documentElement;
+        
+        root.style.setProperty("--nextColor", "#"+colorPalette[Math.floor(Math.random()*colorPalette.length)]);
+
+        function colorChange() {
+            root.style.setProperty("--currColor", root.style.getPropertyValue("--nextColor"));
+            root.style.setProperty("--nextColor", "#"+colorPalette[Math.floor(Math.random()*colorPalette.length)]);
+            while (root.style.getPropertyValue("--currColor") == root.style.getPropertyValue("--nextColor")) {
+                root.style.setProperty("--nextColor", "#"+colorPalette[Math.floor(Math.random()*colorPalette.length)]);
+            }
+        }
+        document.getElementById("colorButt").addEventListener ("onclick", colorChange); 
+        
+    </script>
     
 </body>
 

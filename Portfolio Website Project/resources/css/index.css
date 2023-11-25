@@ -178,10 +178,10 @@ body {
     content: '';
     position: absolute;
     display: block;
-    width: 150%;
-    height: 150%;
-    bottom: -723px;
-    left: 503px;
+    width: 100%;
+    height: 146.5%;
+    bottom: -964px;
+    left: 285px;
     background-color: rgba(255, 0, 0, 0.35);
     z-index: 3;
     -webkit-mask-image: url('../images/IMG_1132.PNG');
@@ -193,7 +193,7 @@ body {
     width: 100%;
     opacity: 0.5;
     position: relative;
-    top: -300px;
+    top: -400px;
     z-index: 2;
 }
 .about-middle {
@@ -225,7 +225,7 @@ body {
     letter-spacing: 3px;
     font-size: 30px;
     margin: 100px auto;
-    line-height: 50px;
+    line-height: 65px;
     z-index: 4;
 }
 
@@ -317,7 +317,7 @@ body {
     background-color: white;
     height: 600px;
     width: 100%;
-    z-index: 0;
+    z-index: 8;
     position: absolute;
     top: 2180px;
     left: 0;

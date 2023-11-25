@@ -344,3 +344,55 @@ footer {
 footer span {
     font-size: 24px;
 }
+
+.cjimage {
+    position: absolute;
+    width: 45%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url('../images/chickenjoe.png');
+    height: 100%;
+    border-top: 2px solid black;
+}
+
+.otherimages {
+    border-top: 2px solid black;
+    width: 55%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.otherimages ul {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.otherimages ul li {
+    width: 40%;
+    height: 100%;
+    
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    margin: 0 auto;
+
+}
+
+.oi1 {
+    background-image: url('../images/IMG_0213.jpg');
+    background-size: cover;
+}
+
+.oi2 {
+    background-image: url('../images/IMG_3637.jpg');
+    background-size: cover;
+    background-position-x: -280px;
+}

@@ -1,6 +1,8 @@
 html {
     width: 100%;
     margin: 0 auto;
+    background-color: black;
+    
 }
 
 .hero-section {
@@ -30,7 +32,9 @@ html {
     
 }
 main {
-    margin: 700px auto;
+    margin: 700px auto 0;
+    background-color: black;
+    
 }
 h1 {
     font-family: 'DM Serif Display', serif;
@@ -117,8 +121,7 @@ nav .right {
     margin: 40px auto;
     width: 10%;
     height: auto;
-    
-
+    display: inline-block;
     color: white;
     display: inline;
     
@@ -131,6 +134,7 @@ nav .right {
 }
 
 .right ul li a {
+    
     width: 100%;
     height: 100%;
     text-decoration: none;
@@ -138,6 +142,7 @@ nav .right {
 }
 body {
     margin: 0 auto;
+    background-color: red;
 }
 .about-section {
     width: 100%;
@@ -173,12 +178,12 @@ body {
     content: '';
     position: absolute;
     display: block;
-    width: 70%;
-    height: 120%;
-    bottom: -1023px;
-    left: 203px;
+    width: 150%;
+    height: 150%;
+    bottom: -723px;
+    left: 503px;
     background-color: rgba(255, 0, 0, 0.35);
-    z-index: 1;
+    z-index: 3;
     -webkit-mask-image: url('../images/IMG_1132.PNG');
     -webkit-mask-size: contain;
     -webkit-mask-repeat: no-repeat;
@@ -189,7 +194,7 @@ body {
     opacity: 0.5;
     position: relative;
     top: -300px;
-    z-index: 0;
+    z-index: 2;
 }
 .about-middle {
     width: 70%;
@@ -222,4 +227,101 @@ body {
     margin: 100px auto;
     line-height: 50px;
     z-index: 4;
+}
+
+.contact-section {
+    width: 100%;
+    height: 400px;
+    color: white;
+    text-align: center;
+    margin: 0 15%;
+    position: absolute;
+    top: 1780px;
+    z-index: 0;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+    width: 70%;
+    z-index: 5;
+
+}
+.contact-section h3 {
+    font-size: 70px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    z-index: 4;
+}
+
+.csubsection {
+    width: 100%;
+
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    z-index: 5;
+    position: relative;
+    left: -20px;
+}
+
+.contact-links {
+    z-index: 4;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+
+}
+.contact-links li {
+    text-align: center;
+    margin: 20px auto;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+
+    list-style-type: none;
+    
+}
+.contact-links li a {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+
+}
+
+.c1 {
+    -webkit-mask-image: url('../images/github-circle.svg');
+    -webkit-mask-size: cover;
+}
+
+.c2 {
+    -webkit-mask-image: url('../images/twitter-circle.svg');
+    -webkit-mask-size: cover;
+}
+
+.c3 {
+    -webkit-mask-image: url('../images/instagram-with-circle.svg');
+    -webkit-mask-size: cover;
+}
+.chickenJoe {
+    color: red;
+    font-family: 'Original Surfer', sans-serif;
+}
+.surfsupbottom {
+    background-color: white;
+    height: 600px;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 2180px;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 5px solid red;
 }

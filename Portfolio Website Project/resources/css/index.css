@@ -158,7 +158,7 @@ body {
 }
 .about-image{ 
     width: 100%;
-    height: 100%;
+    height: 900px;
 }
 /*
 .masked-overlay {
@@ -316,7 +316,7 @@ body {
 }
 .surfsupbottom {
     background-color: white;
-    height: 600px;
+    height: 750px;
     width: 100%;
     z-index: 8;
     position: absolute;
@@ -325,4 +325,22 @@ body {
     margin: 0 auto;
     text-align: center;
     border-top: 5px solid red;
+}
+
+footer {
+    font-family: 'Original Surfer', sans-serif;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    height: 30px;
+    border: 3px solid black;
+    line-height: 30px;
+    letter-spacing: 3px;
+}
+
+footer span {
+    font-size: 24px;
 }

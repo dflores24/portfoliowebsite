@@ -40,7 +40,7 @@ main {
 h1 {
     font-family: 'DM Serif Display', serif;
     font-style: italic;
-    color: white;
+    color: red;
     text-decoration: bold;
     font-size: 100px;
     letter-spacing: 10px;
@@ -81,7 +81,7 @@ nav .left {
 
     width: 10%;
     height: auto;
-    color: white;
+    color: red;
     letter-spacing: 5px;
     font-size: 40px;
     font-style: italic;
@@ -183,7 +183,8 @@ body {
     height: 146.5%;
     bottom: -964px;
     left: 285px;
-    background-color: rgba(255, 0, 0, 0.35);
+    background-color: red;
+    opacity: 0.35;
     z-index: 3;
     -webkit-mask-image: url('../images/IMG_1132.PNG');
     -webkit-mask-size: contain;
